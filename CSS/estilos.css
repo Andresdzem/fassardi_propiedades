@@ -38,14 +38,15 @@
     justify-content: center;
     align-items: center;
     background-image: url('../assets/images/foto index.jpg');
-    background-size: 80%;
+    background-size: 100vw;
     background-repeat: no-repeat;
     background-position: top;
-    height: 85vh;
-    text-align: center;  
-    background-color:rgb(255, 0, 0);
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 40vh;
+    
     a{
-        width: 300px;
+        width: 20vw;
         font-size: 1rem;
         text-decoration: none;
         color: black;
@@ -55,17 +56,30 @@
         border-radius: 10px;
         padding: 10px;
         margin-top: 10px;
-        
     }
     h2{
         font-size: 2rem;
         color: #ffffff;
-}}
-    
+    }
+}
 h1{
     color: rgb(255, 0, 0);
     font-size: 3rem;
+    text-align: center;
 }
+
+@media screen and (max-width: 992px){
+    h1{font-size: 2rem;
+    }
+   .divMain{
+        padding-bottom: 20vh;
+        h2{
+            font-size: 1.5rem;
+            color: #ffffff;
+        }
+    }
+}
+
 .videoIndex{
     width: 100%;
     margin-top: 30px;
@@ -87,10 +101,24 @@ h1{
         padding-top: 20px;
         padding-right: 20px;
     }
-    h2{
-        color: rgb(255, 0, 0);
-    } 
 }
+h2{
+color: rgb(255, 0, 0);
+}
+.card{justify-content: space-between;
+
+    margin: auto;
+    margin-top: 2rem;
+    
+    .card-title{
+        color: rgb(255, 0, 0);
+    }
+    .row{
+        background-color: rgb(200, 200, 200);
+    }
+}
+
+
 /*****************************************Clases de Contaco*/
 .Contacto{
     margin-top: 40px;
@@ -125,49 +153,44 @@ h1{
     background-size: cover;
 }
 
+
 /***********************************Clases de Comprar*/
-.mainComprar{
-    display: flex;
+#buscador {
+    
+    .row{
+        background-color: transparent;
+        margin-top: 0;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        
+    }
+    .g-3 {
+        display: inline;
+    }
+}
+.btn{
+    background-color: rgb(255,0, 0);
+}
+.card{
+    --bs-card-bg: rgb(175, 175, 175);
+}
+.conteiner{
+    margin-bottom: 10px;
 }
 
-.galeria{
-    width: 80vw;
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: div1 div2 div3
-                        div4 div5 div6;
-
-    gap: 20px;
-}
-.galeria > div{
-    text-align: center;
-    background-color:rgb(208, 208, 207);
-    padding-bottom: 20px;   
-}
-div > img{
-    max-width: 100%;
-}
-.buscador{
-    display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    padding: 15px;
-    width: 20vw;
-    height: 100vh;
-    line-height: 1.8;
-    background-color: rgb(198, 198, 197);   
-}
 /******************************Clases Servicios*/
 .franjaServicios{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 0, 0) ;
-    color: #ffffff;
+    
     padding: 15px;
 }
-.franjaServicios > p {
+.franjaServicios > h1 {
+    width: 60vw;
+    color: #ffffff;
     margin-left: 20px;
     font-size: 2rem;
     text-align: center;
@@ -178,6 +201,8 @@ div > img{
     width: 60%;
     display: flex;
     justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 30px auto 30px auto;
     box-shadow: 10px 10px 20px rgb(175, 175, 175);
 }
@@ -189,6 +214,13 @@ p{text-align: justify;}
 .servicios > div > img{
     width: 200px;
 }
+@media screen and (max-width: 992px){
+
+    .franjaServicios > h1{
+        font-size: 1.5rem;
+    }
+}
+
 /***************************Clases de Cotizar*/
 .fotoCotizar{
     width: 100%;
@@ -197,20 +229,22 @@ p{text-align: justify;}
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-}
-.formularioCotizar{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    line-height: 2;
+    margin-bottom: 30px;
 }
 .mainCotizar{
+    background-color: rgb(175, 175, 175);
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: auto auto;
+    width: 60vw;
+    margin-bottom: 30px ;
+}
+#cotizador{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 
