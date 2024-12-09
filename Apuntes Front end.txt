@@ -1,0 +1,11 @@
+git commit
+git status
+git init
+git config user.name
+git restore
+git add. (prepara el commit)
+git push origin master
+git log (ver versiones de cambios hechas)
+
+https://github.com/Andresdzem/fassardi_propiedades.git
+https://andresdzem.github.io/fassardi_propiedades/
