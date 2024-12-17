@@ -133,18 +133,10 @@ color: rgb(255, 0, 0);
 
 
 /***********************************Clases de Comprar*/
-#buscador {
-    
-    .row{
-        background-color: transparent;
-        margin-top: 0;
-        padding-top: 10px;
-        padding-bottom: 15px;
-        
-    }
-    .g-3 {
-        display: inline;
-    }
+.mainComprar{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 .btn{
     background-color: rgb(255,0, 0);
@@ -152,8 +144,17 @@ color: rgb(255, 0, 0);
 .card{
     --bs-card-bg: rgb(175, 175, 175);
 }
-.conteiner{
+.container{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-bottom: 10px;
+}
+.buscador{
+    width: 20vw;
+    text-align: center;
+    
 }
 
 /******************************Clases Servicios*/
