@@ -22,7 +22,7 @@ formulario.addEventListener('submit', evento  =>{
  const errorMail = document.getElementById('errorMail')
  
 
-
+ 
  let formularioValido = true;
 
  if (operacion1.checked || operacion2.checked){
@@ -56,6 +56,7 @@ if (nombre === ""){
 const emailRegex = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 
 if (!emailRegex.test(email)){
+    
     errorMail.classList.remove('d-none')
     formularioValido = false
 }else{

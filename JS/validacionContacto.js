@@ -42,4 +42,8 @@ if (mensaje.value.trim() === "") {
 }   else{
     errorMensaje.classList.add('d-none')
 }
+
+if (formularioValido){
+    alert ("Formulario enviado exitosamente");
+}
 })
