@@ -1,57 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fassardi | Contacto</title>
-    <link rel="icon" href="../images/Fassardi icon.png">
+    <title>Fassardi Propiedades</title>
+    <link rel="icon" href="../assets/images/Fassardi icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/estilos.css">
+    
     <script src="https://kit.fontawesome.com/09d3962ac2.js" crossorigin="anonymous"></script>
-</head>
+  </head>
 <body>
-    <header class="headerPrincipal">
-        <a href="../index.html"><img src="../assets/images/Fassardi Prop.jpg" alt="logo Fassardi" width="100px"></a>
-        <div class="navegador">
-            <nav>
-                <a class="anclas" href="./comprar.html">COMPRAR</a>
-                <a class="anclas" href="./cotizar.html">COTIZAR</a>
-                <a class="anclas" href="./servicios.html">SERVICIOS</a>
-                <a class="anclas" href="./contacto.html">CONTACTO</a>
-            </nav>
-        </div>
-        
+  <header class="headerPrincipal">
+    <a href="../index.html"><img src="../assets/images/Fassardi Prop.jpg" alt="logo Fassardi" width="100px"></a>
+     <div class="navegador">
+        <nav>
+            <a class="anclas" href="./comprar.html">COMPRAR</a>
+            <a class="anclas" href="./cotizar.html">COTIZAR</a>
+            <a class="anclas" href="./servicios.html">SERVICIOS</a>
+            <a class="anclas" href="./contacto.html">CONTACTO</a>
+        </nav>
+      </div>
     </header>
-    <main>
-        <div class="fotoContacto">    </div>
-        <div class="Contacto">
-             <h2>Complete el siguiente formulario con sus datos y <br> responderemos sus inquietudes a la brevedad</h2>
-        
-            <form class="formulario">
-                <input type="text" placeholder="Nombre" required name="nombre" id="nombre">
-                <input type="email" placeholder="Email" required name="email" id="email">
-                <input type="text" placeholder="Teléfono" required name="telefono" id="telefono">
-                <label for="opcion">Seleccione el motivo de su consulta</label>
-                <select name="asunto" id="asunto">
-                    <option value="1">Compra</option>
-                    <option value="2">Venta</option>
-                    <option value="3">Consulta</option>
-                </select>
-                <textarea name="mensaje" id="mensaje" >Mensaje</textarea>
-                <input type="submit" value="ENVIAR">
-            </form>
+    <div class="fotoContacto">    </div>
+    <div class="Contacto">
+         <h1>Dejanos tu inquietud y responderemos a la brevedad</h1>
+    <main class="mainCotizar">
+      <form id="formularioCotizar">
+        <fieldset class="row mb-3">
+               
+        <div class="row mb-3">
+          <label for="" class="col-sm-2 col-form-label">Nombre y Apellido</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="nombre">
+          </div>
+          <small class="text-danger d-none" id="errorNombre">Ingrese su nombre y apellido. </small>
         </div>
         
+        <div class="row mb-3">
+          <label for="" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+          <small class="text-danger d-none" id="errorMail">Ingrese su e-mail. </small>
+        </div>
+
+        <div class="row mb-3">
+          <label for="" class="col-sm-2 col-form-label">Mensaje</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="mensaje"></textarea>
+          </div>
+          <small class="text-danger d-none" id="errorMensaje">Dejenos su mensaje. </small>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="botonCotizar">Enviar</button>
+      </form>
+      
     </main>
-    <footer>
-        <div class="divFooter">
-            <a href="../index.html" target="_blank"><img src="../assets/images/Fassardi Prop.png" width="100px"></a> 
-            <ul class="lineaVertical">
-             <li>0810 600 1000</li>
-              <li>consultas@fassardipropiedades.com</li>
-              <li>@FassardiPropiedades</li>    
-            </ul>   
-        </div>
-        <a href="https://web.whatsapp.com/" target="_blank" ><i class="fa-brands fa-whatsapp"></i></a> 
-    </footer>
+
+  <footer>
+      <div class="divFooter">
+          <a href="../index.html" target="_blank"><img src="../assets/images/Fassardi Prop.png" width="100px"></a> 
+          <ul class="lineaVertical">
+          <li>0810 600 1000</li>
+            <li>consultas@fassardipropiedades.com</li>
+            <li>@FassardiPropiedades</li>    
+          </ul>   
+      </div>
+      <a href="https://web.whatsapp.com/" target="_blank" ><i class="fa-brands fa-whatsapp"></i></a> 
+  </footer>    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="../JS/validacionContacto.js"></script>
 </body>
-</html>
+<html>
+

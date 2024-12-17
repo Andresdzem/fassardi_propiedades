@@ -128,22 +128,7 @@ color: rgb(255, 0, 0);
     align-items: center;
     
 }
-.formulario{
-    background-color: rgb(208, 208, 207);
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: center;
-    line-height: 3;
-    box-shadow: 10px 10px 20px rgb(175, 175, 175)     
-}
-#mensaje{
-    width: 300px;
-    height: 200px;
-}
+
 .fotoContacto{
     width: 100%;
     height: 20vh;
@@ -179,33 +164,35 @@ color: rgb(255, 0, 0);
 }
 
 /******************************Clases Servicios*/
-.franjaServicios{
-    
-    display: flex;
+.mainServicios{
+    width: 100vw;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 0, 0) ;
-    
-    padding: 15px;
 }
-.franjaServicios > h1 {
-    width: 60vw;
+.franjaServicios{
+    display: flex;  
+    background-color: rgb(255, 0, 0) ;
+    padding: 15px 60px;
+}
+
+.franjaServicios > div > h1 {
+    width: 50vw;
     color: #ffffff;
-    margin-left: 20px;
     font-size: 2rem;
+    margin: auto;
     text-align: center;
     font-style: italic;
 }
-.servicios{
-    background-color: rgb(208, 208, 207);
-    width: 60%;
+
+#carouselExample{
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 30px auto 30px auto;
-    box-shadow: 10px 10px 20px rgb(175, 175, 175);
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 80vw;
+    height: 70vh;
+        
 }
+
 .divServicios{
     width: 25%;
 }
@@ -214,10 +201,13 @@ p{text-align: justify;}
 .servicios > div > img{
     width: 200px;
 }
+#frase{
+    margin: auto;
+}
 @media screen and (max-width: 992px){
 
-    .franjaServicios > h1{
-        font-size: 1.5rem;
+    .franjaServicios >div  > h1{
+        font-size: 1rem;
     }
 }
 
@@ -239,23 +229,19 @@ p{text-align: justify;}
     width: 60vw;
     margin-bottom: 30px ;
 }
-#cotizador{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
+
 
 
 /***************************Clases del Footer*/
 .divFooter{
+    width: 100vw;
     display: flex;
     justify-content:center;
     align-items: center;
     padding: 50px;
     line-height: 1.8;
     background-color:rgb(255, 0, 0);
+    color: #ffffff;
 }
 .divFooter > a {
     padding-right: 40px;
