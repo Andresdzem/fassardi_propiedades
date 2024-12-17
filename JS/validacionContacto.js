@@ -1,7 +1,7 @@
 
 
 const botonCotizar = document.getElementById ('botonCotizar');
-const formulario = document.getElementById ('formularioCotizar');
+const formulario = document.getElementById ('formularioContacto');
 
 
 
