@@ -3,10 +3,13 @@
 const botonCotizar = document.getElementById ('botonCotizar');
 const formulario = document.getElementById ('formularioCotizar');
 
+botonCotizar.addEventListener('submit', function (event){
+    console.log ("Formulario enviado con éxito")
+    alert ("Formulario enviado con éxito")
+})
 
 
-
-formulario.addEventListener('submit', evento  =>{
+formulario.addEventListener('click', evento  =>{
         evento.preventDefault();
 
  const operacion1 = document.getElementById ('gridRadios1')
@@ -64,3 +67,4 @@ else{
 }
 
 })
+
