@@ -58,9 +58,12 @@ const emailRegex = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 if (!emailRegex.test(email)){
     errorMail.classList.remove('d-none')
     formularioValido = false
-}
-else{
+}else{
     errorMail.classList.add('d-none')
 }
 
+if (formularioValido){
+    alert ("Formulario enviado exitosamente");
+}
+    
 })
