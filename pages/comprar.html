@@ -25,16 +25,16 @@
     <main class="mainComprar">
 
             <aside class="buscador">
-              <div class="card" style="width: 18rem;">
+              <div class="card" style="width: 18rem;" id="buscador">
                   <label for="validationDefault01" class="form-label">Ubicacion</label>
-                  <select name="ubicacion" id="ubicacion">
+                  <select class="form-select" name="ubicacion" id="ubicacion">
                     <option value="1">CABA</option>
                     <option value="2">AMBA</option>
                     <option value="3">Costa Atlantica</option>
                   </select>
                               
                   <label for="validationDefault02" class="form-label">Propiedad</label>
-                  <select name="propiedad" id="propiedad">
+                  <select class="form-select" name="propiedad" id="propiedad">
                     <option value="1">Casa</option>
                     <option value="2">Departamento</option>
                     <option value="3">Terreno</option>
@@ -42,17 +42,18 @@
                   </select>
 
                   <label for="validationDefaultUsername" class="form-label">Ambientes</label>
-                  <select name="ambientes" id="ambientes">
+                  <select class="form-select" name="ambientes" id="ambientes">
                     <option value="1">1 ambiente</option>
                     <option value="2">2 ambientes</option>
                     <option value="3">3 ambientes</option>
                     <option value="4">4 ambientes</optionn>
                   </select>
-
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                  <label class="form-check-label" for="invalidCheck2">
-                    Guardar preferencias de busqueda </label>
-                  
+                  <br>
+                  <div>
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                  <small id="preferencias">Guardar preferencias de busqueda </small>
+                  </div>
+                  <br>
                   <button class="btn btn-primary" type="submit">BUSCAR</button>  
                 </div>
               </div>

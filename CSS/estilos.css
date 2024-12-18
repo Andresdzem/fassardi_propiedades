@@ -145,16 +145,16 @@ color: rgb(255, 0, 0);
     --bs-card-bg: rgb(175, 175, 175);
 }
 .container{
-    width: 80vw;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 10px;
 }
-.buscador{
-    width: 20vw;
+#buscador{
+    padding: 1rem;
     text-align: center;
-    
+    color:rgb(255,0, 0) ;
 }
 
 /******************************Clases Servicios*/
