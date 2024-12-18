@@ -36,7 +36,7 @@ else{
     errorMail.classList.add('d-none')
 }
 
-if (mensaje.value.trim() === "") {
+if (mensaje.value.length < 10) {
     errorMensaje.classList.remove('d-none')
     formularioValido = false
 }   else{
