@@ -10,8 +10,8 @@ formulario.addEventListener('submit', evento  =>{
         evento.preventDefault();
  const operacion1 = document.getElementById('gridRadios1')
  const operacion2 = document.getElementById('gridRadios2')
- const ubicacion = document.getElementById('specificSizeSelect1')
- const propiedad = document.getElementById('specificSizeSelect2')
+ const ubicacion = document.getElementById('specificSizeSelect1').value
+ const propiedad = document.getElementById('specificSizeSelect2').value
  const nombre = document.getElementById('nombre').value.trim()
  const email = document.getElementById('inputEmail3').value.trim()
  
@@ -24,29 +24,39 @@ formulario.addEventListener('submit', evento  =>{
 
  
  let formularioValido = true;
-
+/*
  if (operacion1.checked || operacion2.checked){
      formularioValido = true
 }   else{
     errorOperacion.classList.remove('d-none')
     formularioValido = false
 }
+*/
+const $seleccion = document.formulari.gridRadios.value
 
-if (ubicacion.selectedIndex === 0){
+if($seleccion !==''){
+    formularioValido = true
+}   else{
+    errorOperacion.classList.remove('d-none')
+    formularioValido = false
+}
+
+
+if (ubicacion === 'Ubicacion...'){
     errorUbicacion.classList.remove('d-none')
     formularioValido = false
 }   else{
-    errorNombre.classList.add('d-none')
+    errorUbicacion.classList.add('d-none')
 }
 
-if (propiedad.selectedIndex === 0){
+if (propiedad === 'Tipo de propiedad...'){
     errorPropiedad.classList.remove('d-none')
     formularioValido = false
 }   else{
-    errorNombre.classList.add('d-none')
+    errorPropiedad.classList.add('d-none')
 }
 
-if (nombre === ""){
+if (nombre === ''){
     errorNombre.classList.remove('d-none')
     formularioValido = false
 }   else{
